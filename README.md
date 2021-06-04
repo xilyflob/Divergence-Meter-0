@@ -23,7 +23,7 @@ Hardware is at V2.85. I thought I was done, but some enticing clock options from
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
 
-I've wanted to do Tom's divergence meter project basically since I first found it after watching the Steins;Gate show. Never actually had the drive to do it though. Don't ask me why, but at some point in 2021 I went to look at the site, only to find it gone. Thankfully a backup had been made on Wayback Machine, but more importantly whoever the saint that runs brotoro.com made a complete functional rehost of the site, much less clunky than Wayback. Would definately say that almost losing that info really pushed me to start working on this.
+I've wanted to do Tom's divergence meter project basically since I first found it after watching the Steins;Gate show. Never actually had the drive to do it though. Don't ask me why, but at some point in 2021 I went to look at the site, only to find it gone. Wayback Machineg has an archive, but more importantly whoever the saint is that runs brotoro.com made a complete functional rehost of the site, which is much less clunky than Wayback. Would definately say that almost losing that info really pushed me to start working on this.
 
 # Licence
 Hardware: Creative Commons Attribution-ShareAlike 4.0 International
