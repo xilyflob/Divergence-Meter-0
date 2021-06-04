@@ -2,10 +2,11 @@
 Recreate Tom Titor's original Divergence Meter project with more up to date hardware and software. Also taking into account current tools and services avalible to makers.
 
 # Goals
-* Maintain level of visual accuracy to the show that was in the original
-* Keep code size down so if people dont want to use updated hardware they can still fit it on the old chip
-  * Currently failing this, assembly output from the C code has proven much less efficient than I had anticipated
-* Provide several sets of hardware packages that cover everything from simple conversion from PCBway files to Eagle ones, to a full desgn revamp with SMT devices
+* Maintain level of visual accuracy to the show that was in the original.
+* Keep code size down so if people dont want to use updated hardware they can still fit it on the old chip.
+  * Currently failing this, assembly output from the C code has proven much less efficient than I had anticipated.
+* Provide several sets of hardware packages that cover everything from simple conversion from PCBway files to Eagle ones, to a full desgn revamp with SMT devices.
+* Provide more accessable code for the microcontroller so makers can make changes on their own easier than with the assembly version, also commented well enough that it is easy to understand.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
