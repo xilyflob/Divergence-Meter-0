@@ -13,6 +13,7 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 * Autodesk Eagle
   * In general I have no love for Autodesk products, however when I started this project it came up when looking for software and I at least knew the name. It is free and does cover the projects requirements well.
 * MPLAB X IDE
+  * XC8 compiler
 * Solidworks
 
 # Current Status 6/4/21
