@@ -16,19 +16,19 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
   * XC8 compiler
 * Solidworks
 
-# Current Status 6/4/21
+# Current Status 6/14/21
 Software is at V1.00. It is feature complete, but I have done no hardware testing due to a lack of hardware. 
 
-Hardware is at V2.85. I thought I was done, but some enticing clock options from Micro Crystal presented themselves to me. The two options I am looking at seem to be superior to the DS3232 in different ways, still playing with them in Eagle. Also I had a thought of eliminating the complexity involved in the battery power circit. Notably the possible danger of accidentally running 9V back into the battery if the diode is not used, and the extra drain if it is. I'll try to propely use the SPDT switch to do this, likely change to a ON-OFF-ON switch instead of the original ON-ON one to give a real off switch as well.
+Hardware is at V2.95. I ended up choosing the RV-8803-C7 RTC for an alternative clock choice. So there will now be a 8803 board version as well as the CS3232 version. There are also relatively minor software changes involved with this, so there will be an alternative version of that as well soon. Also I got the switch change to work, components had to be reshuffled a little. Still hoping that I can compact the board more, but support for the lower left corner is challenging due to chip placement on the other board.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
 
-I've wanted to do Tom's divergence meter project basically since I first found it after watching the Steins;Gate show. Never actually had the drive to do it though. Don't ask me why, but at some point in 2021 I went to look at the site, only to find it gone. Wayback Machineg has an archive, but more importantly whoever the saint is that runs brotoro.com made a complete functional rehost of the site, which is much less clunky than Wayback. Would definately say that almost losing that info really pushed me to start working on this.
+I've wanted to do Tom's divergence meter project basically since I first found it after watching the Steins;Gate show. Never actually had the drive to do it though. Don't ask me why, but at some point in 2021 I went to look at the site, only to find it gone. Wayback Machine has an archive, but more importantly whoever the saint is that runs brotoro.com made a complete functional rehost of the site, which is much less clunky than Wayback. Would definately say that almost losing that info really pushed me to start working on this.
 
 # Licence
 Hardware: Creative Commons Attribution-ShareAlike 4.0 International
 
 Software: GNU GPL V3.0
 
-Also just let me know if you use anything.
+Also just let me know if you use anything. Or if you make this! Would love to see people's projects.
