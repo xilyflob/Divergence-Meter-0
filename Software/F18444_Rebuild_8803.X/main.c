@@ -107,9 +107,9 @@
     SOFTWARE.
 */
 
+#include "Variables.h"
 #include "mcc_generated_files/mcc.h"
 #include "limits.h"
-#include "Variables.h"
 #include "Subroutines.h"
 
 //EEPROM Initialization
@@ -149,15 +149,17 @@ void Startup(void) //one time startup function
     BlankStart = BlankStartStore; //blanking setting initialize
     BlankEnd = BlankEndStore; //blanking setting initialize
 
-    //DS3232 startup check and initialization
-    if (I2CRead(StatusReg) == 0b11001000) //checks status register matches the POR state (will true if this is the "first" time it has seen power)
+    //8803 startup check and initialization
+    if ((I2CRead(FlagReg) & 0b00000011) == 0b00000011) //checks the flag register for bits that are set when low voltage limits are reached, 8803
     {
-        I2CWrite(StatusReg, 0b01001000); //this clears bit 7 in the status/control register, starting the oscillator.
+        I2CWrite(FlagReg, 0); //clears the low voltage limit flags, 8803
+        I2CWrite(CtrlReg, 0b00000001); //set the reset bit, this holds the upper part of the prescaler in reset, effectively stopping the clock, 8803
         I2CWrite(MinutesReg, 0x30); //this and the next 4 lines set up a default date/time, which is the first time a D-mail is sent
         I2CWrite(HoursReg, 0x12);
         I2CWrite(DateReg, 0x28);
         I2CWrite(MonthReg, 0x7);
         I2CWrite(YearReg, 0x10);
+        I2CWrite(CtrlReg, 0b00000000); //clear the reset bit, this releases the hold on the clock, 8803
     }
     
     //Display Initialize
@@ -186,6 +188,8 @@ void main(void) //Time Display
             DMDisplay(); //go to the DM routines
         oldsec = newsec; //save the last read second for comparison
         newsec = I2CRead(SecondsReg); //get the next second, maybe
+        if (newsec == 0x59) //if 59 is read from the clock, 8803
+            newsec = I2CRead(SecondsReg); //reread the clock to check that we did not catch it at a bad time, 8803, this is recommended in section 4.12 of the application manual
         BCD2Bin(newsec); //convert to binary for display
         if (newsec != oldsec) //is it actually a different second
         {
