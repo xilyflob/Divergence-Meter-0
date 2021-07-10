@@ -16,10 +16,16 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
   * XC8 compiler
 * Solidworks
 
-# Current Status 6/14/21
-Software is at V1.00. It is feature complete, but I have done no hardware testing due to a lack of hardware. 
+# Current Status 7/10/21
+Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original ds3232 and one for the newer 8803. 
 
-Hardware is at V2.95. I ended up choosing the RV-8803-C7 RTC for an alternative clock choice. So there will now be a 8803 board version as well as the CS3232 version. There are also relatively minor software changes involved with this, so there will be an alternative version of that as well soon. Also I got the switch change to work, components had to be reshuffled a little. Still hoping that I can compact the board more, but support for the lower left corner is challenging due to chip placement on the other board.
+Hardware is at V2.85. Both board versions are now complete, I think. I'm sure I'll find somthing else to tweak as I go on. Currently looking at:
+* Move from 5V to 3.3V for logic operation
+* Run shift registers @ system input voltage (9-12V)
+* Linear regulator -> buck converter
+* Different means of HV stepup
+
+The first two appear to be realy easy to do, but I am less confident in my abilities in regards to the last two, mostly in picking the right assiciated passive components.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
