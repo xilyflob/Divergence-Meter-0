@@ -11,15 +11,24 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 
 # Software Used
 * Autodesk Eagle
-  * In general I have no love for Autodesk products, however when I started this project it came up when looking for software and I at least knew the name. It is free and does cover the projects requirements well.
+  * Fusion 360 for 3D rendering
+  * In general I have no love for Autodesk products, however when I started this project it came up when looking for software and I at least knew the name. It is free and does cover the projects requirements well. Also now having learned it, I unfortunately really hate the interface of KiCad, it just doesn't work well for me.
 * MPLAB X IDE
   * XC8 compiler
 * Solidworks
 
-# Current Status 6/14/21
-Software is at V1.00. It is feature complete, but I have done no hardware testing due to a lack of hardware. 
+# Current Status 7/30/21
+Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original DS3232 and one for the newer 8803. 
 
-Hardware is at V2.95. I ended up choosing the RV-8803-C7 RTC for an alternative clock choice. So there will now be a 8803 board version as well as the CS3232 version. There are also relatively minor software changes involved with this, so there will be an alternative version of that as well soon. Also I got the switch change to work, components had to be reshuffled a little. Still hoping that I can compact the board more, but support for the lower left corner is challenging due to chip placement on the other board.
+Hardware is at V2.75. Currently the 8803 version is at its most complete, and the DS3232 version of the logic board does not yet reflect changes I've made elsewhere. The display board has had some changes made as well.
+* Logic board is now officially half the size of the original, my goal for boosting battery space.
+* Changed the HV5622 chips on the driver board to HV5623 which are designed to run at 5V natively with a higher max data frequency while being physically smaller.
+* Determined that the boards import *mostly* ok to KiCad, silkscreen is off in some places and the planes are present but dont pour?
+* Still need to review the resistor values for the tubes since all the math I've read online about determining those values and the datasheet imply that the ones on the original Tom Titor boards are undershooting the required values.
+* Need to review wattage ratings for resistors on the display board, I feel like they may be way overkill
+* Need to determine fuse ratings, and by extention reccomended batteries. Everything in the system can handle a fairly wide range of voltages given the correct fuse and trim resistor adjustment. Thus I'd like to provide several fuse options.
+
+The 8803 board is at a stage where I really need more knowlegable outside eyes on it.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
