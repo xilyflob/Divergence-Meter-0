@@ -5383,9 +5383,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U6" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" value="HV5623K7-G"/>
-<part name="U7" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" override_package3d_urn="urn:adsk.eagle:package:30054057/2" override_package_urn="urn:adsk.eagle:footprint:30054058/1" override_locally_modified="yes" value="HV5623K7-G"/>
-<part name="U8" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" value="HV5623K7-G"/>
+<part name="U5" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" value="HV5623K7-G"/>
+<part name="U6" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" override_package3d_urn="urn:adsk.eagle:package:30054057/2" override_package_urn="urn:adsk.eagle:footprint:30054058/1" override_locally_modified="yes" value="HV5623K7-G"/>
+<part name="U7" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="HV5623K7-G" device="" package3d_urn="urn:adsk.eagle:package:30054070/2" value="HV5623K7-G"/>
 <part name="T7" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="IN-14" device="(R)" package3d_urn="urn:adsk.eagle:package:29231715/11" value="IN-14(R)"/>
 <part name="T6" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="IN-14" device="(R)" package3d_urn="urn:adsk.eagle:package:29231715/11" value="IN-14(R)"/>
 <part name="T5" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="IN-14" device="(R)" package3d_urn="urn:adsk.eagle:package:29231715/11" value="IN-14(R)"/>
@@ -5455,15 +5455,15 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <text x="256.54" y="81.28" size="1.778" layer="97">DATA FLOW -&gt;</text>
 </plain>
 <instances>
-<instance part="U6" gate="G$1" x="104.14" y="93.98" smashed="yes">
+<instance part="U5" gate="G$1" x="104.14" y="93.98" smashed="yes">
 <attribute name="NAME" x="103.378" y="144.78" size="2.0828" layer="95" ratio="6" rot="SR0" align="bottom-right"/>
 <attribute name="VALUE" x="103.378" y="104.902" size="2.0828" layer="96" ratio="6" rot="SR90" align="bottom-right"/>
 </instance>
-<instance part="U7" gate="G$1" x="200.66" y="93.98" smashed="yes">
+<instance part="U6" gate="G$1" x="200.66" y="93.98" smashed="yes">
 <attribute name="NAME" x="199.898" y="144.78" size="2.0828" layer="95" ratio="6" rot="SR0" align="bottom-right"/>
 <attribute name="VALUE" x="199.898" y="104.902" size="2.0828" layer="96" ratio="6" rot="SR90" align="bottom-right"/>
 </instance>
-<instance part="U8" gate="G$1" x="294.64" y="93.98" smashed="yes">
+<instance part="U7" gate="G$1" x="294.64" y="93.98" smashed="yes">
 <attribute name="NAME" x="293.878" y="144.78" size="2.0828" layer="95" ratio="6" rot="SR0" align="bottom-right"/>
 <attribute name="VALUE" x="293.878" y="104.902" size="2.0828" layer="96" ratio="6" rot="SR90" align="bottom-right"/>
 </instance>
@@ -5657,7 +5657,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <nets>
 <net name="U5-T0K2" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT10"/>
+<pinref part="U5" gate="G$1" pin="HVOUT10"/>
 <wire x1="101.6" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K2"/>
 <wire x1="96.52" y1="129.54" x2="96.52" y2="187.96" width="0.1524" layer="91"/>
@@ -5665,7 +5665,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K1" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT11"/>
+<pinref part="U5" gate="G$1" pin="HVOUT11"/>
 <pinref part="T7" gate="G$1" pin="K1"/>
 <wire x1="99.06" y1="187.96" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
@@ -5673,7 +5673,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K3" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT9"/>
+<pinref part="U5" gate="G$1" pin="HVOUT9"/>
 <wire x1="101.6" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K3"/>
 <wire x1="93.98" y1="127" x2="93.98" y2="187.96" width="0.1524" layer="91"/>
@@ -5681,7 +5681,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K4" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT8"/>
+<pinref part="U5" gate="G$1" pin="HVOUT8"/>
 <wire x1="101.6" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K4"/>
 <wire x1="91.44" y1="124.46" x2="91.44" y2="187.96" width="0.1524" layer="91"/>
@@ -5689,7 +5689,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K5" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT7"/>
+<pinref part="U5" gate="G$1" pin="HVOUT7"/>
 <wire x1="101.6" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K5"/>
 <wire x1="88.9" y1="121.92" x2="88.9" y2="187.96" width="0.1524" layer="91"/>
@@ -5697,7 +5697,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K6" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT6"/>
+<pinref part="U5" gate="G$1" pin="HVOUT6"/>
 <wire x1="101.6" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K6"/>
 <wire x1="86.36" y1="119.38" x2="86.36" y2="187.96" width="0.1524" layer="91"/>
@@ -5705,7 +5705,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K7" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT5"/>
+<pinref part="U5" gate="G$1" pin="HVOUT5"/>
 <wire x1="101.6" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K7"/>
 <wire x1="83.82" y1="116.84" x2="83.82" y2="187.96" width="0.1524" layer="91"/>
@@ -5713,7 +5713,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K8" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT4"/>
+<pinref part="U5" gate="G$1" pin="HVOUT4"/>
 <wire x1="101.6" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K8"/>
 <wire x1="81.28" y1="114.3" x2="81.28" y2="187.96" width="0.1524" layer="91"/>
@@ -5721,7 +5721,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K9" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT3"/>
+<pinref part="U5" gate="G$1" pin="HVOUT3"/>
 <wire x1="101.6" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K9"/>
 <wire x1="78.74" y1="111.76" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
@@ -5729,7 +5729,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0K0" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT2"/>
+<pinref part="U5" gate="G$1" pin="HVOUT2"/>
 <wire x1="101.6" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="K0"/>
 <wire x1="76.2" y1="187.96" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
@@ -5905,7 +5905,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0RDP" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT1"/>
+<pinref part="U5" gate="G$1" pin="HVOUT1"/>
 <wire x1="101.6" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="175.26" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
@@ -5913,7 +5913,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T0LDP" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT12"/>
+<pinref part="U5" gate="G$1" pin="HVOUT12"/>
 <wire x1="106.68" y1="149.86" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
@@ -5923,13 +5923,13 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <net name="U5-T1RDP" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="U6" gate="G$1" pin="HVOUT13"/>
+<pinref part="U5" gate="G$1" pin="HVOUT13"/>
 <wire x1="109.22" y1="149.86" x2="109.22" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U5-T1LDP" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT24"/>
+<pinref part="U5" gate="G$1" pin="HVOUT24"/>
 <wire x1="137.16" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="129.54" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="152.4" x2="137.16" y2="195.58" width="0.1524" layer="91"/>
@@ -5939,7 +5939,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2RDP" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT25"/>
+<pinref part="U5" gate="G$1" pin="HVOUT25"/>
 <wire x1="137.16" y1="127" x2="144.78" y2="127" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="127" x2="144.78" y2="175.26" width="0.1524" layer="91"/>
@@ -5947,7 +5947,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K0" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT26"/>
+<pinref part="U5" gate="G$1" pin="HVOUT26"/>
 <wire x1="137.16" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K0"/>
 <wire x1="147.32" y1="124.46" x2="147.32" y2="187.96" width="0.1524" layer="91"/>
@@ -5955,7 +5955,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K9" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT27"/>
+<pinref part="U5" gate="G$1" pin="HVOUT27"/>
 <wire x1="137.16" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K9"/>
 <wire x1="149.86" y1="121.92" x2="149.86" y2="187.96" width="0.1524" layer="91"/>
@@ -5963,7 +5963,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K8" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT28"/>
+<pinref part="U5" gate="G$1" pin="HVOUT28"/>
 <wire x1="137.16" y1="119.38" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="119.38" x2="152.4" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K8"/>
@@ -5971,7 +5971,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K7" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT29"/>
+<pinref part="U5" gate="G$1" pin="HVOUT29"/>
 <wire x1="137.16" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="116.84" x2="154.94" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K7"/>
@@ -5979,28 +5979,28 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T1K5" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT19"/>
+<pinref part="U5" gate="G$1" pin="HVOUT19"/>
 <wire x1="124.46" y1="149.86" x2="124.46" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K5"/>
 </segment>
 </net>
 <net name="U5-T1K3" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT21"/>
+<pinref part="U5" gate="G$1" pin="HVOUT21"/>
 <wire x1="129.54" y1="149.86" x2="129.54" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K3"/>
 </segment>
 </net>
 <net name="U5-T1K2" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT22"/>
+<pinref part="U5" gate="G$1" pin="HVOUT22"/>
 <wire x1="132.08" y1="149.86" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K2"/>
 </segment>
 </net>
 <net name="U5-T1K1" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT23"/>
+<pinref part="U5" gate="G$1" pin="HVOUT23"/>
 <wire x1="137.16" y1="132.08" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="149.86" x2="134.62" y2="208.28" width="0.1524" layer="91"/>
@@ -6010,7 +6010,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K6" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT30"/>
+<pinref part="U5" gate="G$1" pin="HVOUT30"/>
 <wire x1="137.16" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K6"/>
 <wire x1="157.48" y1="187.96" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
@@ -6018,7 +6018,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T2K4" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT32"/>
+<pinref part="U5" gate="G$1" pin="HVOUT32"/>
 <wire x1="137.16" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K4"/>
 <wire x1="162.56" y1="187.96" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
@@ -6026,7 +6026,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T2K2" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT2"/>
+<pinref part="U6" gate="G$1" pin="HVOUT2"/>
 <wire x1="198.12" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="109.22" x2="167.64" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K2"/>
@@ -6034,7 +6034,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T2K1" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT3"/>
+<pinref part="U6" gate="G$1" pin="HVOUT3"/>
 <wire x1="198.12" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K1"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
@@ -6042,7 +6042,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T2LDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT4"/>
+<pinref part="U6" gate="G$1" pin="HVOUT4"/>
 <wire x1="198.12" y1="114.3" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="175.26" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
@@ -6050,7 +6050,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3RDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT5"/>
+<pinref part="U6" gate="G$1" pin="HVOUT5"/>
 <wire x1="198.12" y1="116.84" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="195.58" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
@@ -6058,7 +6058,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K0" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT6"/>
+<pinref part="U6" gate="G$1" pin="HVOUT6"/>
 <wire x1="198.12" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="119.38" x2="182.88" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="K0"/>
@@ -6066,7 +6066,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K9" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT7"/>
+<pinref part="U6" gate="G$1" pin="HVOUT7"/>
 <wire x1="198.12" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="121.92" x2="185.42" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="K9"/>
@@ -6074,7 +6074,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K8" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT8"/>
+<pinref part="U6" gate="G$1" pin="HVOUT8"/>
 <wire x1="198.12" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="124.46" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="K8"/>
@@ -6082,7 +6082,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K7" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT9"/>
+<pinref part="U6" gate="G$1" pin="HVOUT9"/>
 <wire x1="198.12" y1="127" x2="190.5" y2="127" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="K7"/>
 <wire x1="190.5" y1="208.28" x2="190.5" y2="127" width="0.1524" layer="91"/>
@@ -6090,7 +6090,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K5" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT11"/>
+<pinref part="U6" gate="G$1" pin="HVOUT11"/>
 <wire x1="198.12" y1="132.08" x2="195.58" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="132.08" x2="195.58" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T4" gate="G$1" pin="K5"/>
@@ -6098,7 +6098,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K4" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT12"/>
+<pinref part="U6" gate="G$1" pin="HVOUT12"/>
 <pinref part="T4" gate="G$1" pin="K4"/>
 <wire x1="203.2" y1="149.86" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="152.4" x2="198.12" y2="152.4" width="0.1524" layer="91"/>
@@ -6107,7 +6107,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K3" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT13"/>
+<pinref part="U6" gate="G$1" pin="HVOUT13"/>
 <pinref part="T4" gate="G$1" pin="K3"/>
 <wire x1="205.74" y1="149.86" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
@@ -6116,7 +6116,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K2" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT14"/>
+<pinref part="U6" gate="G$1" pin="HVOUT14"/>
 <pinref part="T4" gate="G$1" pin="K2"/>
 <wire x1="208.28" y1="149.86" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
@@ -6125,7 +6125,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K1" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT15"/>
+<pinref part="U6" gate="G$1" pin="HVOUT15"/>
 <pinref part="T4" gate="G$1" pin="K1"/>
 <wire x1="210.82" y1="149.86" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="160.02" x2="205.74" y2="160.02" width="0.1524" layer="91"/>
@@ -6134,7 +6134,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3LDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT16"/>
+<pinref part="U6" gate="G$1" pin="HVOUT16"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="149.86" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="195.58" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
@@ -6143,49 +6143,49 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T4RDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT17"/>
+<pinref part="U6" gate="G$1" pin="HVOUT17"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="149.86" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U6-T4K0" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT18"/>
+<pinref part="U6" gate="G$1" pin="HVOUT18"/>
 <pinref part="T3" gate="G$1" pin="K0"/>
 <wire x1="218.44" y1="149.86" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U6-T4K9" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT19"/>
+<pinref part="U6" gate="G$1" pin="HVOUT19"/>
 <pinref part="T3" gate="G$1" pin="K9"/>
 <wire x1="220.98" y1="149.86" x2="220.98" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U6-T4K8" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT20"/>
+<pinref part="U6" gate="G$1" pin="HVOUT20"/>
 <wire x1="223.52" y1="149.86" x2="223.52" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K8"/>
 </segment>
 </net>
 <net name="U6-T4K7" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT21"/>
+<pinref part="U6" gate="G$1" pin="HVOUT21"/>
 <wire x1="226.06" y1="149.86" x2="226.06" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K7"/>
 </segment>
 </net>
 <net name="U6-T4K6" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT22"/>
+<pinref part="U6" gate="G$1" pin="HVOUT22"/>
 <wire x1="228.6" y1="149.86" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K6"/>
 </segment>
 </net>
 <net name="U6-T4K4" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT24"/>
+<pinref part="U6" gate="G$1" pin="HVOUT24"/>
 <wire x1="233.68" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K4"/>
 <wire x1="233.68" y1="187.96" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
@@ -6195,7 +6195,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T4K2" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT26"/>
+<pinref part="U6" gate="G$1" pin="HVOUT26"/>
 <wire x1="233.68" y1="124.46" x2="243.84" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="124.46" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K2"/>
@@ -6205,7 +6205,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T4LDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT28"/>
+<pinref part="U6" gate="G$1" pin="HVOUT28"/>
 <wire x1="233.68" y1="119.38" x2="248.92" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="119.38" x2="248.92" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -6215,7 +6215,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T5RDP" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT29"/>
+<pinref part="U6" gate="G$1" pin="HVOUT29"/>
 <wire x1="233.68" y1="116.84" x2="251.46" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="195.58" x2="251.46" y2="116.84" width="0.1524" layer="91"/>
@@ -6223,7 +6223,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T5K0" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT30"/>
+<pinref part="U6" gate="G$1" pin="HVOUT30"/>
 <wire x1="233.68" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K0"/>
 <wire x1="254" y1="208.28" x2="254" y2="114.3" width="0.1524" layer="91"/>
@@ -6231,49 +6231,49 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-T1K0" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT14"/>
+<pinref part="U5" gate="G$1" pin="HVOUT14"/>
 <wire x1="111.76" y1="149.86" x2="111.76" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K0"/>
 </segment>
 </net>
 <net name="U5-T1K9" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT15"/>
+<pinref part="U5" gate="G$1" pin="HVOUT15"/>
 <wire x1="114.3" y1="149.86" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K9"/>
 </segment>
 </net>
 <net name="U5-T1K8" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT16"/>
+<pinref part="U5" gate="G$1" pin="HVOUT16"/>
 <wire x1="116.84" y1="149.86" x2="116.84" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K8"/>
 </segment>
 </net>
 <net name="U5-T1K7" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT17"/>
+<pinref part="U5" gate="G$1" pin="HVOUT17"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K7"/>
 </segment>
 </net>
 <net name="U5-T1K6" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT18"/>
+<pinref part="U5" gate="G$1" pin="HVOUT18"/>
 <wire x1="121.92" y1="149.86" x2="121.92" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K6"/>
 </segment>
 </net>
 <net name="U5-T1K4" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT20"/>
+<pinref part="U5" gate="G$1" pin="HVOUT20"/>
 <wire x1="127" y1="149.86" x2="127" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G$1" pin="K4"/>
 </segment>
 </net>
 <net name="U5-T2K5" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="HVOUT31"/>
+<pinref part="U5" gate="G$1" pin="HVOUT31"/>
 <wire x1="137.16" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K5"/>
 <wire x1="160.02" y1="187.96" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
@@ -6281,7 +6281,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T2K3" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT1"/>
+<pinref part="U6" gate="G$1" pin="HVOUT1"/>
 <wire x1="198.12" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G$1" pin="K3"/>
 <wire x1="165.1" y1="106.68" x2="165.1" y2="187.96" width="0.1524" layer="91"/>
@@ -6289,7 +6289,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T3K6" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT10"/>
+<pinref part="U6" gate="G$1" pin="HVOUT10"/>
 <pinref part="T4" gate="G$1" pin="K6"/>
 <wire x1="198.12" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="208.28" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
@@ -6297,7 +6297,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T5K8" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT32"/>
+<pinref part="U6" gate="G$1" pin="HVOUT32"/>
 <pinref part="T2" gate="G$1" pin="K8"/>
 <wire x1="233.68" y1="109.22" x2="259.08" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="208.28" x2="259.08" y2="109.22" width="0.1524" layer="91"/>
@@ -6305,7 +6305,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T5K9" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT31"/>
+<pinref part="U6" gate="G$1" pin="HVOUT31"/>
 <wire x1="233.68" y1="111.76" x2="256.54" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K9"/>
 <wire x1="256.54" y1="208.28" x2="256.54" y2="111.76" width="0.1524" layer="91"/>
@@ -6313,7 +6313,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T4K3" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT25"/>
+<pinref part="U6" gate="G$1" pin="HVOUT25"/>
 <pinref part="T3" gate="G$1" pin="K3"/>
 <wire x1="233.68" y1="127" x2="241.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="187.96" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
@@ -6323,7 +6323,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U6-T4K5" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="HVOUT23"/>
+<pinref part="U6" gate="G$1" pin="HVOUT23"/>
 <wire x1="233.68" y1="132.08" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="T3" gate="G$1" pin="K5"/>
 <wire x1="236.22" y1="132.08" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
@@ -6334,14 +6334,14 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <net name="U7-T5LDP" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
-<pinref part="U8" gate="G$1" pin="HVOUT8"/>
+<pinref part="U7" gate="G$1" pin="HVOUT8"/>
 <wire x1="292.1" y1="124.46" x2="279.4" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="124.46" x2="279.4" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U7-T6K9" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT11"/>
+<pinref part="U7" gate="G$1" pin="HVOUT11"/>
 <wire x1="292.1" y1="132.08" x2="289.56" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="132.08" x2="289.56" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K9"/>
@@ -6351,7 +6351,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K0" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT10"/>
+<pinref part="U7" gate="G$1" pin="HVOUT10"/>
 <wire x1="292.1" y1="129.54" x2="287.02" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="129.54" x2="287.02" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91"/>
@@ -6361,7 +6361,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6RDP" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT9"/>
+<pinref part="U7" gate="G$1" pin="HVOUT9"/>
 <wire x1="292.1" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="127" x2="284.48" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -6371,7 +6371,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT7"/>
+<pinref part="U7" gate="G$1" pin="HVOUT7"/>
 <wire x1="292.1" y1="121.92" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="121.92" x2="276.86" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K1"/>
@@ -6379,7 +6379,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT6"/>
+<pinref part="U7" gate="G$1" pin="HVOUT6"/>
 <wire x1="292.1" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="119.38" x2="274.32" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K2"/>
@@ -6387,7 +6387,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K3" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT5"/>
+<pinref part="U7" gate="G$1" pin="HVOUT5"/>
 <wire x1="292.1" y1="116.84" x2="271.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="116.84" x2="271.78" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K3"/>
@@ -6395,7 +6395,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K4" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT4"/>
+<pinref part="U7" gate="G$1" pin="HVOUT4"/>
 <wire x1="292.1" y1="114.3" x2="269.24" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="114.3" x2="269.24" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K4"/>
@@ -6403,7 +6403,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K5" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT3"/>
+<pinref part="U7" gate="G$1" pin="HVOUT3"/>
 <wire x1="292.1" y1="111.76" x2="266.7" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="111.76" x2="266.7" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K5"/>
@@ -6411,7 +6411,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT2"/>
+<pinref part="U7" gate="G$1" pin="HVOUT2"/>
 <wire x1="292.1" y1="109.22" x2="264.16" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="109.22" x2="264.16" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K6"/>
@@ -6419,7 +6419,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T5K7" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT1"/>
+<pinref part="U7" gate="G$1" pin="HVOUT1"/>
 <wire x1="292.1" y1="106.68" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="K7"/>
 <wire x1="261.62" y1="208.28" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
@@ -6427,7 +6427,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K3" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT17"/>
+<pinref part="U7" gate="G$1" pin="HVOUT17"/>
 <wire x1="309.88" y1="149.86" x2="309.88" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K3"/>
 <wire x1="307.34" y1="187.96" x2="307.34" y2="165.1" width="0.1524" layer="91"/>
@@ -6436,7 +6436,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7LDP" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT32"/>
+<pinref part="U7" gate="G$1" pin="HVOUT32"/>
 <wire x1="327.66" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="195.58" x2="350.52" y2="175.26" width="0.1524" layer="91"/>
@@ -6446,7 +6446,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT31"/>
+<pinref part="U7" gate="G$1" pin="HVOUT31"/>
 <wire x1="327.66" y1="111.76" x2="350.52" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="T0" gate="G$1" pin="K1"/>
 <wire x1="347.98" y1="208.28" x2="347.98" y2="172.72" width="0.1524" layer="91"/>
@@ -6456,7 +6456,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT30"/>
+<pinref part="U7" gate="G$1" pin="HVOUT30"/>
 <wire x1="327.66" y1="114.3" x2="347.98" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="T0" gate="G$1" pin="K2"/>
 <wire x1="345.44" y1="208.28" x2="345.44" y2="170.18" width="0.1524" layer="91"/>
@@ -6466,7 +6466,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K3" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT29"/>
+<pinref part="U7" gate="G$1" pin="HVOUT29"/>
 <pinref part="T0" gate="G$1" pin="K3"/>
 <wire x1="327.66" y1="116.84" x2="345.44" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="208.28" x2="342.9" y2="167.64" width="0.1524" layer="91"/>
@@ -6476,7 +6476,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K4" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT28"/>
+<pinref part="U7" gate="G$1" pin="HVOUT28"/>
 <pinref part="T0" gate="G$1" pin="K4"/>
 <wire x1="327.66" y1="119.38" x2="342.9" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="208.28" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
@@ -6486,7 +6486,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K5" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT27"/>
+<pinref part="U7" gate="G$1" pin="HVOUT27"/>
 <pinref part="T0" gate="G$1" pin="K5"/>
 <wire x1="327.66" y1="121.92" x2="340.36" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="208.28" x2="337.82" y2="162.56" width="0.1524" layer="91"/>
@@ -6496,7 +6496,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT26"/>
+<pinref part="U7" gate="G$1" pin="HVOUT26"/>
 <pinref part="T0" gate="G$1" pin="K6"/>
 <wire x1="327.66" y1="124.46" x2="337.82" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="208.28" x2="335.28" y2="160.02" width="0.1524" layer="91"/>
@@ -6506,7 +6506,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K7" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT25"/>
+<pinref part="U7" gate="G$1" pin="HVOUT25"/>
 <pinref part="T0" gate="G$1" pin="K7"/>
 <wire x1="327.66" y1="127" x2="335.28" y2="127" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="208.28" x2="332.74" y2="157.48" width="0.1524" layer="91"/>
@@ -6516,7 +6516,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K8" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT24"/>
+<pinref part="U7" gate="G$1" pin="HVOUT24"/>
 <pinref part="T0" gate="G$1" pin="K8"/>
 <wire x1="327.66" y1="129.54" x2="332.74" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="208.28" x2="330.2" y2="154.94" width="0.1524" layer="91"/>
@@ -6526,7 +6526,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K9" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT23"/>
+<pinref part="U7" gate="G$1" pin="HVOUT23"/>
 <pinref part="T0" gate="G$1" pin="K9"/>
 <wire x1="327.66" y1="132.08" x2="330.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="208.28" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
@@ -6536,7 +6536,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7K0" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT22"/>
+<pinref part="U7" gate="G$1" pin="HVOUT22"/>
 <wire x1="322.58" y1="149.86" x2="322.58" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="152.4" x2="325.12" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="T0" gate="G$1" pin="K0"/>
@@ -6545,7 +6545,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T7RDP" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT21"/>
+<pinref part="U7" gate="G$1" pin="HVOUT21"/>
 <wire x1="320.04" y1="149.86" x2="320.04" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="322.58" y1="195.58" x2="322.58" y2="154.94" width="0.1524" layer="91"/>
@@ -6554,7 +6554,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6LDP" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT20"/>
+<pinref part="U7" gate="G$1" pin="HVOUT20"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="175.26" x2="314.96" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="172.72" x2="317.5" y2="172.72" width="0.1524" layer="91"/>
@@ -6563,7 +6563,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K1" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT19"/>
+<pinref part="U7" gate="G$1" pin="HVOUT19"/>
 <pinref part="T1" gate="G$1" pin="K1"/>
 <wire x1="312.42" y1="187.96" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="170.18" x2="314.96" y2="170.18" width="0.1524" layer="91"/>
@@ -6572,7 +6572,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT18"/>
+<pinref part="U7" gate="G$1" pin="HVOUT18"/>
 <wire x1="312.42" y1="149.86" x2="312.42" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K2"/>
 <wire x1="309.88" y1="187.96" x2="309.88" y2="167.64" width="0.1524" layer="91"/>
@@ -6581,7 +6581,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K4" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT16"/>
+<pinref part="U7" gate="G$1" pin="HVOUT16"/>
 <wire x1="307.34" y1="149.86" x2="307.34" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K4"/>
 <wire x1="304.8" y1="187.96" x2="304.8" y2="162.56" width="0.1524" layer="91"/>
@@ -6590,7 +6590,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K5" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT15"/>
+<pinref part="U7" gate="G$1" pin="HVOUT15"/>
 <wire x1="304.8" y1="149.86" x2="304.8" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K5"/>
 <wire x1="302.26" y1="187.96" x2="302.26" y2="160.02" width="0.1524" layer="91"/>
@@ -6599,7 +6599,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K6" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT14"/>
+<pinref part="U7" gate="G$1" pin="HVOUT14"/>
 <wire x1="302.26" y1="149.86" x2="302.26" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K6"/>
 <wire x1="299.72" y1="187.96" x2="299.72" y2="157.48" width="0.1524" layer="91"/>
@@ -6608,7 +6608,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K7" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT13"/>
+<pinref part="U7" gate="G$1" pin="HVOUT13"/>
 <wire x1="299.72" y1="149.86" x2="299.72" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K7"/>
 <wire x1="297.18" y1="187.96" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
@@ -6617,7 +6617,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U7-T6K8" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="HVOUT12"/>
+<pinref part="U7" gate="G$1" pin="HVOUT12"/>
 <wire x1="297.18" y1="149.86" x2="297.18" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="K8"/>
 <wire x1="294.64" y1="187.96" x2="294.64" y2="152.4" width="0.1524" layer="91"/>
@@ -6626,7 +6626,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="VSS"/>
+<pinref part="U7" gate="G$1" pin="VSS"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="312.42" y1="71.12" x2="312.42" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="1" pin="GND"/>
@@ -6635,7 +6635,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <wire x1="314.96" y1="71.12" x2="312.42" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="VSS"/>
+<pinref part="U6" gate="G$1" pin="VSS"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="SUPPLY2" gate="1" pin="GND"/>
 <wire x1="218.44" y1="91.44" x2="218.44" y2="71.12" width="0.1524" layer="91"/>
@@ -6644,7 +6644,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <junction x="218.44" y="71.12"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="VSS"/>
+<pinref part="U5" gate="G$1" pin="VSS"/>
 <wire x1="121.92" y1="91.44" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="SUPPLY1" gate="1" pin="GND"/>
@@ -6707,17 +6707,17 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <label x="83.82" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="!BL"/>
+<pinref part="U7" gate="G$1" pin="!BL"/>
 <wire x1="322.58" y1="88.9" x2="322.58" y2="91.44" width="0.1524" layer="91"/>
 <label x="322.58" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="!BL"/>
+<pinref part="U6" gate="G$1" pin="!BL"/>
 <wire x1="228.6" y1="91.44" x2="228.6" y2="88.9" width="0.1524" layer="91"/>
 <label x="228.6" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="!BL"/>
+<pinref part="U5" gate="G$1" pin="!BL"/>
 <wire x1="132.08" y1="91.44" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
 <label x="132.08" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -6729,7 +6729,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <label x="83.82" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="DATAIN"/>
+<pinref part="U5" gate="G$1" pin="DATAIN"/>
 <wire x1="129.54" y1="88.9" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
 <label x="129.54" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -6741,25 +6741,25 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <label x="83.82" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="!LE"/>
+<pinref part="U5" gate="G$1" pin="!LE"/>
 <wire x1="127" y1="91.44" x2="127" y2="88.9" width="0.1524" layer="91"/>
 <label x="127" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="!LE"/>
+<pinref part="U6" gate="G$1" pin="!LE"/>
 <wire x1="223.52" y1="91.44" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
 <label x="223.52" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="!LE"/>
+<pinref part="U7" gate="G$1" pin="!LE"/>
 <wire x1="317.5" y1="88.9" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
 <label x="317.5" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="!POL"/>
-<pinref part="U8" gate="G$1" pin="VDD"/>
+<pinref part="U7" gate="G$1" pin="!POL"/>
+<pinref part="U7" gate="G$1" pin="VDD"/>
 <wire x1="314.96" y1="81.28" x2="314.96" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="71.12" x2="304.8" y2="81.28" width="0.1524" layer="91"/>
@@ -6773,9 +6773,9 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <junction x="307.34" y="81.28"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="VDD"/>
+<pinref part="U6" gate="G$1" pin="VDD"/>
 <wire x1="220.98" y1="81.28" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G$1" pin="!POL"/>
+<pinref part="U6" gate="G$1" pin="!POL"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="81.28" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <junction x="213.36" y="81.28"/>
@@ -6793,8 +6793,8 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <wire x1="91.44" y1="15.24" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="!POL"/>
-<pinref part="U6" gate="G$1" pin="VDD"/>
+<pinref part="U5" gate="G$1" pin="!POL"/>
+<pinref part="U5" gate="G$1" pin="VDD"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="114.3" y1="83.82" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
@@ -6809,19 +6809,19 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="U5-U6" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="DATAOUT"/>
+<pinref part="U5" gate="G$1" pin="DATAOUT"/>
 <wire x1="106.68" y1="91.44" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G$1" pin="DATAIN"/>
+<pinref part="U6" gate="G$1" pin="DATAIN"/>
 <wire x1="106.68" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="76.2" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U6-U7" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="DATAOUT"/>
+<pinref part="U6" gate="G$1" pin="DATAOUT"/>
 <wire x1="203.2" y1="91.44" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="78.74" x2="320.04" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U8" gate="G$1" pin="DATAIN"/>
+<pinref part="U7" gate="G$1" pin="DATAIN"/>
 <wire x1="320.04" y1="78.74" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6832,17 +6832,17 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <label x="83.82" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="CLK"/>
+<pinref part="U7" gate="G$1" pin="CLK"/>
 <wire x1="309.88" y1="88.9" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="309.88" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="CLK"/>
+<pinref part="U6" gate="G$1" pin="CLK"/>
 <wire x1="215.9" y1="91.44" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
 <label x="215.9" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="CLK"/>
+<pinref part="U5" gate="G$1" pin="CLK"/>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="119.38" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -6850,7 +6850,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <net name="U6-T4K1" class="0">
 <segment>
 <pinref part="T3" gate="G$1" pin="K1"/>
-<pinref part="U7" gate="G$1" pin="HVOUT27"/>
+<pinref part="U6" gate="G$1" pin="HVOUT27"/>
 <wire x1="233.68" y1="121.92" x2="246.38" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="121.92" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="187.96" x2="241.3" y2="160.02" width="0.1524" layer="91"/>

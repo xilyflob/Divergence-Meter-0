@@ -2991,7 +2991,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="C-EU" device="" package3d_urn="urn:adsk.eagle:package:29231716/2" value="0.1µF"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U5" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="RV-8803-C7" device="" package3d_urn="urn:adsk.eagle:package:29231763/3"/>
+<part name="U4" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="RV-8803-C7" device="" package3d_urn="urn:adsk.eagle:package:29231763/3"/>
 <part name="D2" library="My Imported Components" library_urn="urn:adsk.eagle:library:29231634" deviceset="BAS70-05" device="" package3d_urn="urn:adsk.eagle:package:29330405/3"/>
 <part name="CALTP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP18R" package3d_urn="urn:adsk.eagle:package:27981/1" override_package3d_urn="urn:adsk.eagle:package:29359131/3" override_package_urn="urn:adsk.eagle:footprint:27927/1"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -3201,7 +3201,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <instance part="P+1" gate="1" x="25.4" y="195.58" smashed="yes">
 <attribute name="VALUE" x="25.4" y="196.342" size="1.016" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="U5" gate="G$1" x="40.64" y="152.4" smashed="yes">
+<instance part="U4" gate="G$1" x="40.64" y="152.4" smashed="yes">
 <attribute name="NAME" x="55.88" y="172.72" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="D2" gate="G$1" x="35.56" y="190.5" smashed="yes" rot="R180">
@@ -3354,7 +3354,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <wire x1="20.32" y1="182.88" x2="20.32" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VSS"/>
+<pinref part="U4" gate="G$1" pin="VSS"/>
 <pinref part="SUPPLY7" gate="1" pin="GND"/>
 <wire x1="38.1" y1="160.02" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="160.02" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
@@ -3565,7 +3565,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <segment>
 <wire x1="58.42" y1="157.48" x2="60.96" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="U5" gate="G$1" pin="SDA"/>
+<pinref part="U4" gate="G$1" pin="SDA"/>
 <wire x1="60.96" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <label x="78.74" y="157.48" size="1.27" layer="95" xref="yes"/>
 <wire x1="63.5" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
@@ -3582,7 +3582,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <segment>
 <wire x1="58.42" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="U5" gate="G$1" pin="SCL"/>
+<pinref part="U4" gate="G$1" pin="SCL"/>
 <wire x1="60.96" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="147.32" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
 <label x="78.74" y="154.94" size="1.27" layer="95" xref="yes"/>
@@ -3616,7 +3616,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="182.88" x2="30.48" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="VDD"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="35.56" y1="187.96" x2="35.56" y2="182.88" width="0.1524" layer="91"/>
 <junction x="35.56" y="182.88"/>
@@ -3633,7 +3633,7 @@ Attribution-ShareAlike 4.0 International Licence</text>
 </net>
 <net name="CLKTEST" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="CLKOUT"/>
+<pinref part="U4" gate="G$1" pin="CLKOUT"/>
 <pinref part="CALTP" gate="G$1" pin="TP"/>
 <wire x1="58.42" y1="167.64" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="167.64" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
