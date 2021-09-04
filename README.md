@@ -11,23 +11,22 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 
 # Software Used
 * Autodesk Eagle
-  * Fusion 360 for 3D rendering
-  * In general I have no love for Autodesk products, however when I started this project it came up when looking for software and I at least knew the name. It is free and does cover the projects requirements well. Also now having learned it, I unfortunately really hate the interface of KiCad, it just doesn't work well for me.
+  * Originaly used to do the PCB design, the SMT versions were later converted to KiCad. Earlier, simpler converts and redesigns currently remain in those file types.
+* KiCad
 * MPLAB X IDE
   * XC8 compiler
 * Solidworks
 
-# Current Status 8/7/21
+# Current Status 9/3/21
 Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original DS3232 and one for the newer 8803. 
 
-Hardware is at V2.75. Currently the 8803 version is at its most complete, and the DS3232 version of the logic board does not yet reflect changes I've made to the 8803 version. The display board has had some large changes made as well.
-* Logic board is now officially half the size of the original, my goal for boosting battery space.
-* Changed the HV5622 chips on the driver board to HV5623 which are designed to run at 5V natively with a higher max data frequency while being physically smaller, allowing the final shrink to 50% original size.
-* Determined that the boards import *mostly* ok to KiCad, silkscreen is off in some places and the planes are present but dont pour?
-* Need to review wattage ratings for resistors on the display board, I feel like they may be way overkill.
-* Need to determine fuse ratings, and by extention reccomended batteries. Everything in the system can handle a fairly wide range of voltages given the correct fuse and trim resistor adjustment. Thus I'd like to provide several fuse options.
+Hardware is at V3.0. I've submitted the 8803 logic board to several fab/assembly houses for quoting, I'm currently guessing I'll go with PCBWay but we will see.
+* I was having issues with getting gerber/drill/pnp files out of the Autodesk products in the formats some of the fab houses wanted. Thus I took the plunge and used KiCad's Eagle file convert feature, for the most part it worked great! The major thing I had to do was fix text positioning since it works differently. 
+* I also took the opportunity to change the DC power jack footprint to have real slots instead of the BS that Eagle makes you do.
+* I will eventually take the time to complete the conversion and upload them here instead of the Eagle files.
+* I was able to do the math on the fuse rating for 12V operation, it...was the same 800mA. I am fairly sure I did this right, so I am guessing that component changes reduced power requirements enough...I think.
 
-The boards are at a stage where I really need more knowlegable outside eyes on it.
+Thanks to the helpful folks on /r/PrintedCircuitBoard/, Jonathan from swissnixie.com, and John from Taylor Electronics for the design info or help they provided.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
@@ -35,7 +34,9 @@ Full disclosure time, I have zero formal training in coding or electrical engine
 I've wanted to do Tom's divergence meter project basically since I first found it after watching the Steins;Gate show. Never actually had the drive to do it though. Don't ask me why, but at some point in 2021 I went to look at the site, only to find it gone. Wayback Machine has an archive, but more importantly whoever the saint is that runs brotoro.com made a complete functional rehost of the site, which is much less clunky than Wayback. Would definately say that almost losing that info really pushed me to start working on this.
 
 # Thanks
-* Jonathan from [SWISSNIXIE](http://www.swissnixie.com/) for helping me understand nixie tube amperage and resistance requirement as well as lending prototyping advice on the HV5623 drivers
+* Jonathan from [SWISSNIXIE](http://www.swissnixie.com/) for helping me understand nixie tube amperage and resistance requirement as well as lending prototyping advice on the HV5623 drivers.
+* John from [Taylor Electronics](https://www.shop-tes.com/) for providing data on the current usage of the 1364 HVPS in this specific application.
+* /r/PrintedCircuitBoard/ for doing their best to answer my questions
 
 # Licence
 Hardware: Creative Commons Attribution-ShareAlike 4.0 International
