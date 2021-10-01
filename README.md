@@ -26,8 +26,6 @@ Hardware is at V3.0. I've submitted the 8803 logic board to several fab/assembly
 * I will eventually take the time to complete the conversion and upload them here instead of the Eagle files.
 * I was able to do the math on the fuse rating for 12V operation, it...was the same 800mA. I am fairly sure I did this right, so I am guessing that component changes reduced power requirements enough...I think.
 
-Thanks to the helpful folks on /r/PrintedCircuitBoard/, Jonathan from swissnixie.com, and John from Taylor Electronics for the design info or help they provided.
-
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
 
@@ -36,7 +34,7 @@ I've wanted to do Tom's divergence meter project basically since I first found i
 # Thanks
 * Jonathan from [SWISSNIXIE](http://www.swissnixie.com/) for helping me understand nixie tube amperage and resistance requirement as well as lending prototyping advice on the HV5623 drivers.
 * John from [Taylor Electronics](https://www.shop-tes.com/) for providing data on the current usage of the 1364 HVPS in this specific application.
-* /r/PrintedCircuitBoard/ for doing their best to answer my questions
+* /r/PrintedCircuitBoard for doing their best to answer my questions
 
 # Licence
 Hardware: Creative Commons Attribution-ShareAlike 4.0 International
