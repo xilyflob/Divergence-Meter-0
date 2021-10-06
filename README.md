@@ -17,14 +17,11 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
   * XC8 compiler
 * Solidworks
 
-# Current Status 9/3/21
+# Current Status 10/5/21
 Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original DS3232 and one for the newer 8803. 
 
-Hardware is at V3.0. I've submitted the 8803 logic board to several fab/assembly houses for quoting, I'm currently guessing I'll go with PCBWay but we will see.
-* I was having issues with getting gerber/drill/pnp files out of the Autodesk products in the formats some of the fab houses wanted. Thus I took the plunge and used KiCad's Eagle file convert feature, for the most part it worked great! The major thing I had to do was fix text positioning since it works differently. 
-* I also took the opportunity to change the DC power jack footprint to have real slots instead of the BS that Eagle makes you do.
-* I will eventually take the time to complete the conversion and upload them here instead of the Eagle files.
-* I was able to do the math on the fuse rating for 12V operation, it...was the same 800mA. I am fairly sure I did this right, so I am guessing that component changes reduced power requirements enough...I think.
+Hardware is at V3.0. I've gotten all the parts exept for the tubes and I have the logic boards in hand. I will first assemble those and do testing. Then I'll be getting some other random bits and the nixies to do resistance value testing as well as testing a HV5623 out. I will also begin making a build log out of photos and post a link soon.
+* I ended up getting my boards from PCBway. I had wanted to get them done in the US but the prices were just too high. Both the extra boards and the partially assembled boards from PCBway look great. Will be discovering any issues as construction continues.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
