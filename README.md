@@ -17,10 +17,13 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
   * XC8 compiler
 * Solidworks
 
+# Build Log
+Avalible on [Imgur](https://imgur.com/a/QL4b4lS), maybe one day I will make a website for better layout and such.
+
 # Current Status 10/5/21
 Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original DS3232 and one for the newer 8803. 
 
-Hardware is at V3.0. I've gotten all the parts exept for the tubes and I have the logic boards in hand. I will first assemble those and do testing. Then I'll be getting some other random bits and the nixies to do resistance value testing as well as testing a HV5623 out. I will also begin making a build log out of photos and post a link soon.
+Hardware is at V3.0. I've gotten all the parts exept for the tubes and I have the logic boards in hand. I will first assemble those and do testing. Then I'll be getting some other random bits and the nixies to do resistance value testing as well as testing a HV5623 out.
 * I ended up getting my boards from PCBway. I had wanted to get them done in the US but the prices were just too high. Both the extra boards and the partially assembled boards from PCBway look great. Will be discovering any issues as construction continues.
 
 # Background
