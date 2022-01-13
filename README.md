@@ -20,11 +20,10 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 # Build Log
 Avalible on [Imgur](https://imgur.com/a/QL4b4lS), maybe one day I will make a website for better layout and such.
 
-# Current Status 10/5/21
-Software is at V1.05. It is feature complete, but I have done no hardware testing due to a lack of hardware. There is two versions now, one for the original DS3232 and one for the newer 8803. 
+# Current Status 1/12/22
+I assembled the logic boards! They went together ok for the most part, mostly down to my inexperiance with soldering I think. The PSUs were easy to set the output on, which was nice. Initial simple testing with the MCU also went great. However when I attempted to communicate with the RTC I am getting stuck at a point waiting for an ACK signal.
 
-Hardware is at V3.0. I've gotten all the parts exept for the tubes and I have the logic boards in hand. I will first assemble those and do testing. Then I'll be getting some other random bits and the nixies to do resistance value testing as well as testing a HV5623 out.
-* I ended up getting my boards from PCBway. I had wanted to get them done in the US but the prices were just too high. Both the extra boards and the partially assembled boards from PCBway look great. Will be discovering any issues as construction continues.
+I've started to buy things for nixie testing and HV5623 communications testing. the chip shortage has gotten MUCH worse since a built the logic boards, I desperately hope that HV5623 chips are still avalible when I am ready to construct the nixie boards.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
