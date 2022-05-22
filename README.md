@@ -20,12 +20,12 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 # Build Log
 Avalible on [Imgur](https://imgur.com/a/QL4b4lS), maybe one day I will make a website for better layout and such.
 
-# Current Status 2/19/22
-I continue to have issues communicating over the I2C bus to the RTC chip, admitadly I have not really looked into it much yet. I decided to "ignore" the issue for now as I am guessing it is a software issue.
+# Current Status 5/22/22
+I continue to have issues communicating over the I2C bus to the RTC chip, admitadly I have not really looked into it much yet. I plan to diagnose and solve this issue next.
 
-I made a breakout board for the HV5623 and was able to communicate with it and control a nixie (albiet in a somewhat manual way) after I fixed a really dumb software bug that I had made for myself. I am now working with PCBWay to get the boards manufactured. I made the critical mistake of not buying all the driver chips beforehand and now there are precicely 0 newly manufactured ones around. PCBWay has found several that were made in 2018 though.
+I have managed full communication with my HV5623 breakout board so good to go there. Now for the bad news. After I last updated this PCBWay contacted me and corrected an earlier assertion that they had the HV5623 chips. Despite my best efforts there does not seem to be any avalible anywhere on Earth. Thus untill Microchip makes more or I find a suitable alternative I'm kinda dead in the water. If you know of a source or a alternative PLEASE let me know.
 
-Oh and for resistanse values I went with the same values as Tom did after my testing, they seemed just fine.
+I went through all the nixie tubes and made sure they all worked. Two had one of the decimal points fall off and are now rattling around inside but other than that they are all great.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
