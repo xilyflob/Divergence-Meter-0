@@ -205,20 +205,21 @@ void Loader(void)
     char regp; //for counter
     char shftregpln[12] = {L,1,2,3,4,5,6,7,8,9,0,R}; //this is the order of the inputs into the tube as setup on the board
     
+    LE_SetLow(); //insurance that LE is indeed low
     for (Pos=0; Pos<8; Pos++) //this will rotate through all the tubes, 
     { //cant use any fancy c compiler tricks for space saving, this must be done in order
-        for (regp=0; regp<13; regp++) //this will check where the 1 needs to be to display the value correctly
+        for (regp=0; regp<12; regp++) //this will check where the 1 needs to be to display the value correctly
         {
             if (shftregpln[regp] == DisplayBuf[Pos]) //the actual search check
             {
-                DIN_SetHigh(); //set DIN high to send a 1
                 CLK_SetHigh(); //raise the CLK line
+                DIN_SetHigh(); //set DIN high to send a 1
                 CLK_SetLow(); //flip the CLK line to create a voltage drop and the 1 is read by the shift register
             }
             else
             {
-                DIN_SetLow(); //ensure that DIN is low a 1 wont be sent
                 CLK_SetHigh(); //raise the CLK line
+                DIN_SetLow(); //ensure that DIN is low so a 1 wont be sent
                 CLK_SetLow(); //flip the CLK line to create a voltage drop and the 0 is read by the shift register
             }
         }
@@ -389,7 +390,9 @@ uint8_t I2CRead(uint8_t reg)
     uint8_t receiveddata; //the data we get back will be temporarily stored here
     
     I2COpen(&reg); //initialize the I2C connection
-    SSP1CON2bits.RSEN = 1; //start the repeated start sequence
+    SSP1CON2bits.PEN = 1; //start the close sequence
+    I2CIrqWait(); //wait for the interrupt
+    SSP1CON2bits.SEN = 1; //send the start signal over the pins
     I2CIrqWait(); //wait for the interrupt
     SSP1BUF = (ClockAddress << 1 | 1); //send the clock address in read mode
     I2CIrqWait(); //wait for the interrupt

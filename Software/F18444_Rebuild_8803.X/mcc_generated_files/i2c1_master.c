@@ -167,17 +167,21 @@ i2c1_status_t I2C1_Status = {0};
 void I2C1_Initialize()
 {
     //I2C set/recovery sequence, 8803 recommended
+    RB6PPS = 0; //clearing peripheral assignment
+    TRISB = 0; //All B ports to output
+    LATBbits.LATB6 = 1; //attempt to assert a 1 on SDA
     if (PORTBbits.RB6 == 0) //if the SDA line is being held low
     {
         RB4PPS = 0; //clearing peripheral assignment
-        RB6PPS = 0; //clearing peripheral assignment
-        TRISB = 0x40; //flip the SCL pin (RB4) into output mode
+        TRISB = 0x40; //SCL (RB4) to output, SDA (RB6) to input
         for (char bits=9; bits--;) //up to 9 bits to clear this
         {
             LATBbits.LATB4 = 0; //SCL output low
             _delay(6); //6us delay to hold low
             LATBbits.LATB4 = 1; //SCL output high
             _delay(6); //another hold here
+            LATBbits.LATB4 = 0; //SCL output low
+            _delay(6); //third hold
             if (PORTBbits.RB6 == 1) //if it got cleared
                 break; //stop doing the bits
         }
@@ -186,10 +190,10 @@ void I2C1_Initialize()
         LATBbits.LATB4 = 1; //SCL high for stop
         _delay(6); //ensure timing
         LATBbits.LATB6 = 1; //SDA high to complete stop condition
-        TRISB = 0x50; //SCL and SDA pins back into the correct mode for I2C
-        LATB = 0; //clear LATB
-        //SSP1CON2bits.PEN = 1; //do a close
     }
+    TRISB = 0x50; //SCL and SDA pins back into the correct mode for I2C
+    LATB = 0; //clear LATB
+    //end 8803 recommended initialize sequence
     SSP1CLKPPS = 0x0C;   //RB4->MSSP1:SCL1
     RB6PPS = 0x14;   //RB6->MSSP1:SDA1
     RC4PPS = 0x0D;   //RC4->PWM6:PWM6OUT

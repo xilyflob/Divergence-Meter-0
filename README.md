@@ -19,10 +19,10 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 # Build Log
 Available on [Imgur](https://imgur.com/a/QL4b4lS), maybe one day I will make a website for better layout and such.
 
-# Current Status 10/15/22
-I continue to have issues communicating over the I2C bus to the RTC chip, admittedly I have not really looked into it much yet. I plan to diagnose and solve this issue next.
+# Current Status 11/21/22
+Fixed the communications issue with the RTC. The issue was that writing to the RTC over I2C worked great, but reads would get stuck after the write phase of a read. The issue was with the built in repeated start function in the MCU, after removing that and replacing it with a "manual" stop and start it worked great. Bought a whole oscilloscope for diagnosing that and it took only a couple hours, yay.
 
-Microchip is making the HV5623 chips again!!!!!!!!!!!!!!!!!!!!!!!! Even better I have some in hand ready to go to assembly. Working on re-exporting everything to get PCBWay going again, also have to ship the chips to China.
+Boards are being made and mostly assembled at PCBWay right now. Had to ship the chips I got to them, which was a ridiculous $136. Paid at least as much for them to get them in the first place.
 
 Going to be reducing the scope of this project, I'm not finding the motivation to keep up with the other versions I had spoken about in the goals section previously. I will not delete them but they will be zipped up and archived here.
 

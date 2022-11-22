@@ -16,7 +16,7 @@
     /u/xilyflob
 
   Version:
-    1.05
+    1.10
 
   License:
     GNU GPL V3.0
@@ -44,6 +44,13 @@
  *        available. If you are viewing the 8803 version of this file there will
  *        be noted additions or changes to the code, search for 8803 to find relevant
  *        lines.
+ * 1.10 - Fixed an issue in the I2CRead function that was causing it to get stuck
+ *        after the finishing the write portion and starting the actual read. The
+ *        fix was not using the SSP1CON2bits.RSEN function to do the repeated start
+ *        instead using SSP1CON2bits.PEN and SSP1CON2bits.SEN to do it. This is
+ *        out as ok to do in the 8803 app manual. Also touched up the bad shutdown
+ *        recovery in the I2C startup sequence, as it was it wasn't exactly what
+ *        the manual called for.
  */
 
 /* Notes by the rewriter
@@ -167,7 +174,7 @@ void Startup(void) //one time startup function
     Loader(); //load the blank tubes to the display
     TubesOn(); //turn the tubes on
     //END PROGRAM INITIALIZATION
-    StartupDone = 1; //permanent bit to indicate that startup has been done 
+    StartupDone = 1; //semi-permanent bit to indicate that startup has been done 
 }
 
 void main(void) //Time Display
