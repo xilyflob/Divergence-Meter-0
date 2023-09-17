@@ -19,12 +19,14 @@ Recreate Tom Titor's original Divergence Meter project with more up to date hard
 # Build Log
 Available on [Imgur](https://imgur.com/a/QL4b4lS), maybe one day I will make a website for better layout and such.
 
-# Current Status 11/25/22
-Fixed the communications issue with the RTC. The issue was that writing to the RTC over I2C worked great, but reads would get stuck after the write phase of a read. The issue was with the built in repeated start function in the MCU, after removing that and replacing it with a "manual" stop and start it worked great. Bought a whole oscilloscope for diagnosing that and it took only a couple hours, yay. Have updated the software files uploaded here.
+# Current Status 9/16/23
+Long time no update :)
 
-Boards are being made and mostly assembled at PCBWay right now. Had to ship the chips I got to them, which was a ridiculous $136. Paid at least as much for them to get them in the first place. I've completed my Rev. A changes to the logic boards and have updated the files here. I'm considering the Rev. A versions to be the first tested functional revision for public release,  go nuts.
+Lost lots of motivation to work on this after I realized that there are more I2C issues. Regular writes flat out dont work, you make it though the code but they don't take on the RTC. Currently implementing a fix that is reccomended in the 8803 manual, hopefully it works.
 
-Going to be reducing the scope of this project, I'm not finding the motivation to keep up with the other versions I had spoken about in the goals section previously. I will not delete them but they will be zipped up and archived here.
+No changes to hardware this time, I do have a bunch of ideas for a Rev B including actually hooking up the INT line from the RTC which could prove EXTREMELY useful in making the software less "busy".
+
+Motivation remains hard, hope to keep at this as well as I can.
 
 # Background
 Full disclosure time, I have zero formal training in coding or electrical engineering, I am actually a machinist (I guess that makes me qualified to fab the actual box though). On top of this, this is my first time doing any assembly reading, C coding, coding for microchips, or circuit board design. If I make a mistake that you see, PLEASE tell me.
